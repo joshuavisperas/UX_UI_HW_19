@@ -1,0 +1,272 @@
+/*Hero Section*/
+#hero {
+    height:900px;
+    width:100%;
+    background:linear-gradient(45deg,#000000,#323D58);
+    position:relative;
+   
+}
+
+.navBar  {
+    display:grid;
+    position:absolute;
+    justify-content:space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top:20px;
+    margin:10 auto;
+    padding:20px;
+    left:75%;
+    font-family: 'Playfair Display', serif;
+    font-size:20px;
+    z-index:20;
+    width:400px;
+    cursor:pointer;
+    color:white;
+}
+
+.navProjects {
+    transition:all .3s ease-in-out;
+}
+.navProjects:hover {
+    transform:scale(1.2);
+}
+.navAbout {
+    transition:all .3s ease-in-out;
+}
+.navAbout:hover {
+    transform:scale(1.2);
+}
+.navResume {
+    transition:all .3s ease-in-out;
+}
+.navResume:hover {
+    transform:scale(1.2);
+}
+
+.logo {
+    position:absolute;
+    z-index:10;
+    left:70px;
+    top:20px;
+    z-index:20;
+    cursor:pointer;
+}
+
+.myName {
+    position:relative;
+    display:grid;
+    font-family: 'Playfair Display', serif;
+    font-size:24pt;
+    top:35%;
+    justify-content:center;
+    line-height:50px;
+    color:white;
+}
+
+.hello {
+    position:relative;
+    right:40px;
+}
+.name {
+    font-size:64pt;
+    padding:30px;
+}
+
+.position {
+    position:relative;
+    right:-400px;
+    margin-top:15px;
+}
+
+/*About Me Section*/
+#aboutMe {
+    position:absolute;
+    height:700px;
+    width:100%;
+    z-index:10;
+    display:none;
+    color:white;
+}
+
+.aboutDescription {
+    color:white;
+    width:475px;
+    height:400px;
+    font-family: 'Roboto', sans-serif;
+    margin-top:275px;
+    margin-left:25%;
+    position:absolute;
+}
+
+.aboutHeader {
+    font-family:'Playfair Display', serif;
+    font-size: 20pt;
+    font-weight:bold;
+    color:white;
+    left:25%;
+    margin-top:175px;
+    position:absolute;
+}
+
+.skillsHeader {
+    font-family:'Playfair Display', serif;
+    font-size: 20pt;
+    color:white;
+    left:58%;
+    margin-top:175px;
+    position:absolute;
+}
+
+.mySkills {
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "userResearch interactionDesign"
+        "interfaceDesign prototyping";
+    width:550px;
+    height:400px;
+    margin-top:400px;
+    left:58%;
+    position:absolute;
+    font-family: 'Playfair Display', serif;
+    font-size:20px;
+
+}
+
+/*Project Section*/
+#projects {
+    font-family: 'Roboto', sans-serif;
+    background-color:white;
+    height:1100px; 
+}
+
+.image1 {
+    position: relative;
+    width: 300px;
+    height: 100px;
+    margin-top:60px;
+    transform:scale(0.55);
+    left:20%;
+}
+
+.project1 {
+    font-style:normal;
+    position: relative;
+    width: 550px;
+    height: 291px;
+    left: 49%;
+    
+    line-height:20px;
+}
+
+h2 {
+    text-align:center;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+.button1 {
+    text-align:center;
+    margin-top:30px;
+    font-weight:bold;
+}
+
+.image2 {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    left:47%;
+    transform:scale(.4);
+    top:100px;
+}
+
+.project2 {
+    position: relative;
+    width: 550px;
+    height: 291px;
+    left: 22%;
+    line-height:20px;
+    top:100px;
+}
+
+h2 {
+    text-align:center;
+    font-family: 'Playfair Display', serif;
+}
+
+.button2 {
+    text-align:center;
+    font-weight:bold;
+    margin-top:30px;
+}
+
+/* Footer */
+#footer {
+    height:300px;
+    background:linear-gradient(45deg,#000000,#323D58);
+}
+
+.footerNav {
+    display:flex;
+    justify-content:space-evenly;
+    font-size:25px;
+    align-items:center;
+    height:300px;
+    color:white;
+}
+
+@media only screen and (max-width: 600px) {
+    .navButton {
+        display:none;
+    }
+
+    #hero {
+        left:-110%;
+    }
+
+    #aboutMe{
+        width:100%;
+        position:absolute;
+        height:900px;
+    }
+
+    .aboutHeader {
+        font-size:20px;
+        margin-top:120px;
+        left:20%
+    }
+    
+    .aboutDescription {
+        font-size:15px;
+        margin:0 auto;
+        top:180px;
+        width:300px;
+        left:20%;
+    }
+
+    .skillsHeader {
+        top:200px;
+        left:20%;
+        font-size:20px;
+    }
+
+    .mySkills {
+        width:400px;
+        left:15%;
+        top:200px;
+    }
+    
+    #projects {
+        position:relative;
+        top:600px;
+    }
+
+    #footer {
+        margin-top:2000px;;
+    }
+
+    .image1 {
+        margin:0 auto;
+    }
+  }
